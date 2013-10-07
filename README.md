@@ -13,13 +13,13 @@ importScripts('ww.js');
 var workerWrapper = ww(null, self);
 
 workerWrapper.on('myEvent', function(data) {
-//do somnething with data
-//data is an object of MessageEvent
+  //do somnething with data
+  //data is an object of MessageEvent
 });
 
 workerWrapper.emit('myEvent', {
-anything: 1,
-bla: 'hai'
+  anything: 1,
+  bla: 'hai'
 });
 ```
 
@@ -30,13 +30,13 @@ var workerWrapper = ww('worker.js');
 //The on and emit events work just the same way
 
 workerWrapper.on('myEvent', function(data) {
-//do somnething with data
-//data is an object of MessageEvent
+  //do somnething with data
+  //data is an object of MessageEvent
 });
 
 workerWrapper.emit('myEvent', {
-anything: 1,
-bla: 'hai'
+  anything: 1,
+  bla: 'hai'
 });
 ```
 
