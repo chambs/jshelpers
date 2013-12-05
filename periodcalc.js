@@ -2,8 +2,8 @@
 //today as timestamp or null
 function pc(dt, today) {
 
-	var timeLabels = ['seconds', 'minutes', 'hours', 'days', 'years'],
-        times = [1000, 60, 60, 24, 365],
+	var timeLabels = ['seconds', 'minutes', 'hours', 'days', 'months', 'years'],
+        times = [1000, 60, 60, 24, 30, 12],
         len = times.length,
         i = 0,
         currentNum,
@@ -35,3 +35,4 @@ console.log(result);
 
 result = pc(bday);
 console.log(result);
+console.log(pc(new Date(2013, 10, 6)));
