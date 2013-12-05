@@ -3,7 +3,7 @@
 function pc(dt, today) {
 
 	var timeLabels = ['seconds', 'minutes', 'hours', 'days', 'months', 'years'],
-        times = [1000, 60, 60, 24, 30, 12],
+        times = [1000, 60, 60, 24, 30.4, 12],
         len = times.length,
         i = 0,
         currentNum,
