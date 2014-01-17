@@ -4,6 +4,9 @@ jshelpers
 A bunch of small Javascript utilities
 
 
+###Date formatter
+(JSFiddle)[http://jsfiddle.net/chambs/VYkSJ/]
+
 ###Webworker Wrapper use
 
 
