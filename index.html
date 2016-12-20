@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Worker sample</title>
+  </head>
+  <body>
+    <h1>Check your browser's console...</h1>
+
+    <script type="text/javascript" src="ww.js"></script>
+    <script type="text/javascript">
+    var workerWrapper = new ww('myworker.js');
+    //The on and emit events work just the same way
+    workerWrapper.on('heavyTask', function (ev) {
+      console.log('heavy task result is', ev.data.result);
+    });
+
+    workerWrapper.emit('heavyTask', {
+    	n: 1e10
+    });
+    console.log('Waiting worker to reply to some heavy task request...');
+
+    </script>
+  </body>
+</html>
